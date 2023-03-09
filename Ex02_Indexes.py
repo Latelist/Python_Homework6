@@ -5,7 +5,7 @@ from random import randint
 def find_indexes(array, minn, maxx):
     indexes = []
     for i in range(len(array)):
-        if minn < array[i] < maxx:
+        if minn <= array[i] <= maxx:
             indexes.append(i)
     return indexes
 
